@@ -1,19 +1,19 @@
-#react-native-bottom-sheet
+# react-native-bottom-sheet
 
 
 react-native wrapper for android[ BottomSheet](https://material.io/develop/android/components/bottom-sheet-behavior/ " BottomSheet")
 
 >NOTE this is supported only by android as of now.
 
-##Demo
+## Demo
 
 ![hEnwsZ](https://i.makeagif.com/media/9-28-2018/hEnwsZ.gif)
 
-##Install
+## Install
 
 `$ npm install -s react-native-bottom-sheet`
 
-##Usage
+## Usage
 
 You will need to wrap you view in `RNBottomSheet`.
 
@@ -47,7 +47,7 @@ You will need to wrap you view in `RNBottomSheet`.
 			</RNBottomSheet>
 ```
 
-###Props
+### Props
 | Prop  | type  | description | Initial Value |
 | :------------ |:-----:| :---------|  :----|
 | initialY      | number | Position of bottom sheet view with respect to the window |half of window size|
