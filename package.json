@@ -1,0 +1,19 @@
+{
+  "name": "react-native-bottom-sheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1"
+  },
+  "devDependencies": {
+    "react": "^16.5.2",
+    "react-native": "^0.57.1"
+  },
+  "repository": "git@github.com:Garvita-hike/react-native-bottom-sheet.git",
+  "author": "",
+  "license": "ISC"
+}
