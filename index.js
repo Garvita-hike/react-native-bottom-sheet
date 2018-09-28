@@ -8,6 +8,8 @@ const RESTORE_ANIMATION_DURATION = 200;
 class RNBottomSheet extends Component {
 	static defaultProps = {
 		initialY: windowSize.height/2,
+		isDismissable: true,
+		disableDragUp: false
 	}
 
 	static propTypes = {
@@ -16,7 +18,8 @@ class RNBottomSheet extends Component {
 		onTopReached: PropTypes.func,
 		isDismissable: PropTypes.bool,
 		disableSlider: PropTypes.bool,
-		initialRenderTime: PropTypes.number
+		initialRenderTime: PropTypes.number,
+		disableDragUp: PropTypes.bool
 	};
 
 	constructor(props){
