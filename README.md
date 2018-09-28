@@ -1,7 +1,7 @@
 # react-native-bottom-sheet
 
 
-react-native wrapper for android[ BottomSheet](https://material.io/develop/android/components/bottom-sheet-behavior/ " BottomSheet")
+react-native implementation for android[ BottomSheet](https://material.io/develop/android/components/bottom-sheet-behavior/ " BottomSheet")
 
 >NOTE this is supported only by android as of now.
 
