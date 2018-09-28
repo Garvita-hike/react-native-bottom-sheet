@@ -58,3 +58,28 @@ You will need to wrap you view in `RNBottomSheet`.
 | onTopReached | function        | callback when the sheet is dragged to the top of screen ||
 | disableDragUp | bool        | disable the drag up action | false|
 |style| style props | To specify the container style||
+
+## Setting up NPM config
+
+### Get Username and Password for hike artifactory
+* Login using Hike-OAuth to https://artifactory.hike.in/artifactory/
+* Go to profile, your username will be visible there and generate api key (this is your password)
+
+### Get NPM config
+* hit curl command (replace <USERNAME> and <PASSWORD> with your username and password)  
+  `curl -u<USERNAME>:<PASSWORD> https://artifactory.hike.in/artifactory/api/npm/auth`    
+
+  You will get response like this    
+  `_auth = <authstring>
+   always-auth = true
+   email = <email>`   
+* save this response in ~/.npmrc
+* run command    
+   `npm config set registry https://artifactory.hike.in/artifactory/api/npm/npm`    
+    
+    
+## Add react-native-bottom-sheet as dependency
+* Add this under dependencies in package.json    
+  `"react-native-bottom-sheet": "^1.0.0"` use latest sdk version
+* Install packages    
+  `npm install`
