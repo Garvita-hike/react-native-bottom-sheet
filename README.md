@@ -18,33 +18,33 @@ react-native wrapper for android[ BottomSheet](https://material.io/develop/andro
 You will need to wrap you view in `RNBottomSheet`.
 
 ```javascript
-			<RNBottomSheet
-				style={styles.flexView}
-				initialY={initialY}
-				ref={(ref) => (this.bottomSheet = Utils.getComponentRef(ref))}
-				onDismiss={this.props.hideModal}
-				onTopReached={() => { this.setState({scrollEnabled: true}); }}
-				isDismissable={true}
-				disableSlider={scrollEnabled}
-				initialRenderTime={400}
-			>
-				<TouchableWithoutFeedback onPress={() => {}}>
-					<View style = {styles.container}>
-						<FlatList
-							ref={(node) => this.listRef = node}
-							stickyHeaderIndices={[0]}
-							onScroll={this._onScroll}
-							scrollEnabled={scrollEnabled}
-							data={data}
-							renderItem={this.getListItem}
-							showsVerticalScrollIndicator={false}
-							ListHeaderComponent={this.renderHeader}
-							keyExtractor={this.keyExtractor}
-							removeSubClippedViews={true}
-						/>
-					</View>
-				</TouchableWithoutFeedback>
-			</RNBottomSheet>
+	<RNBottomSheet
+		style={styles.flexView}
+		initialY={initialY}
+		ref={(ref) => (this.bottomSheet = Utils.getComponentRef(ref))}
+		onDismiss={this.props.hideModal}
+		onTopReached={() => { this.setState({scrollEnabled: true}); }}
+		isDismissable={true}
+		disableSlider={scrollEnabled}
+		initialRenderTime={400}
+	>
+		<TouchableWithoutFeedback onPress={() => {}}>
+			<View style = {styles.container}>
+				<FlatList
+					ref={(node) => this.listRef = node}
+					stickyHeaderIndices={[0]}
+					onScroll={this._onScroll}
+					scrollEnabled={scrollEnabled}
+					data={data}
+					renderItem={this.getListItem}
+					showsVerticalScrollIndicator={false}
+					ListHeaderComponent={this.renderHeader}
+					keyExtractor={this.keyExtractor}
+					removeSubClippedViews={true}
+				/>
+			</View>
+		</TouchableWithoutFeedback>
+	</RNBottomSheet>
 ```
 
 ### Props
