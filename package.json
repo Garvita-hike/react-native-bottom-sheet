@@ -1,19 +1,20 @@
 {
   "name": "react-native-bottom-sheet",
   "version": "1.0.0",
-  "description": "",
+  "description": "react-native-bottom-sheet is a react native implementation for android's bottom sheet behavior.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "prop-types": "^15.6.1"
-  },
-  "devDependencies": {
-    "react": "^16.5.2",
-    "react-native": "^0.57.1"
-  },
-  "repository": "git@github.com:Garvita-hike/react-native-bottom-sheet.git",
-  "author": "",
-  "license": "ISC"
+		"prop-types": "^15.6.1"
+	},
+	"devDependencies": {
+		"react": "16.3.1",
+		"react-native": "0.55.3"
+	},
+	"peerDependencies": {
+    	"react": "*",
+    	"react-native": "*"
+  }
 }
